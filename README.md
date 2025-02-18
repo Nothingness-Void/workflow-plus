@@ -1,12 +1,7 @@
-# OneBot-adapter for ChatGPT-Mirai-QQ-Bot
+# Time node for ChatGPT-Mirai-QQ-Bot
 
-本项目是 [ChatGPT-Mirai-QQ-Bot](https://github.com/lss233/chatgpt-mirai-qq-bot) 的一个插件，用于将OneBot协议的消息转换为ChatGPT-Mirai-QQ-Bot的消息格式。
+向工作流中添加当前日期和时间的插件，以便配合搜索使用
 
-## 安装
-
-```bash
-pip install chatgpt-mirai-qq-bot-web-search
-```
 
 ## 使用
 
