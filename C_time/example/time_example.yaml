@@ -1,0 +1,20 @@
+name: 获取时间示例
+blocks:
+  - type: time_block
+    name: get_time
+    params:
+      timezone: "Asia/Shanghai"
+    position:
+      x: 100
+      y: 100
+    connected_to:
+      - target: print_time
+        mapping:
+          from: current_time
+          to: time
+  - type: internal:print
+    name: print_time
+    params: {}
+    position:
+      x: 300
+      y: 100
