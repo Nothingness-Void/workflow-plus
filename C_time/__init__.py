@@ -1,5 +1,6 @@
 # Initialize the C_time module
 from C_time.blocks import TimeBlock
+from framework.workflow.core.plugin import Plugin
 
 class CTimePlugin(Plugin):
     def __init__(self, block_registry: BlockRegistry, container: DependencyContainer):
