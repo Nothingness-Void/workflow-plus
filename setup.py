@@ -12,13 +12,15 @@ setup(
     include_package_data=True,  # 这行很重要
     package_data={
         "web_search": ["example/*.yaml", "example/*.yml"],
+        "C_time": ["example/*.yaml", "example/*.yml"],  # 添加C_time模块
     },
     install_requires=[
-        "playwright","trafilatura","lxml_html_clean",
+        "playwright","trafilatura","lxml_html_clean","pytz",  # 添加pytz依赖
     ],
     entry_points={
         'chatgpt_mirai.plugins': [
-            'web_search = web_search:WebSearchPlugin'
+            'web_search = web_search:WebSearchPlugin',
+            'C_time = C_time:TimeBlock',  # 注册C_time模块
         ]
     },
     author="chuanSir",
